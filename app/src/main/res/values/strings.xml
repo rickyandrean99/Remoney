@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Remoney</string>
+    <string name="title_expenses">Expenses</string>
+    <string name="title_loans">Loans</string>
+</resources>
