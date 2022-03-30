@@ -8,4 +8,9 @@
     <string name="month_expenses">This month expenses</string>
     <string name="expenses">Rp 2.000.000</string>
     <string name="content">Description</string>
+    <string name="date">Date</string>
+    <string name="timeframe">Timeframe</string>
+    <string name="category">Category</string>
+    <string name="timeframevalue">Daily</string>
+    <string name="category_value">Food</string>
 </resources>

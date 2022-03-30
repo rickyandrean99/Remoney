@@ -10,8 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Remoney">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.rickyandrean.remoney
+package com.rickyandrean.remoney.ui.main
 
 import android.os.Bundle
 import android.view.View
@@ -8,6 +8,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.rickyandrean.remoney.R
 import com.rickyandrean.remoney.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -35,6 +36,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         // Event listener
         binding.cvNotification.setOnClickListener(this)
         binding.cvSetting.setOnClickListener(this)
+        binding.cvFriend.setOnClickListener(this)
+        binding.imgCode.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -42,6 +45,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.cvNotification -> Toast.makeText(this, "Ini Notification", Toast.LENGTH_SHORT).show()
             R.id.cvSetting -> Toast.makeText(this, "Ini Setting", Toast.LENGTH_SHORT).show()
             R.id.cvFriend -> Toast.makeText(this, "Ini Friend", Toast.LENGTH_SHORT).show()
+            R.id.imgCode -> Toast.makeText(this, "Ini QR Code", Toast.LENGTH_SHORT).show()
         }
     }
 }
