@@ -3,6 +3,7 @@ package com.rickyandrean.remoney.adapter
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.rickyandrean.remoney.R
@@ -28,9 +29,13 @@ class TimeFrameAdapter(private val timeFrameList: List<String>): RecyclerView.Ad
             if (position == 4) {
                 cvItemTimeFrame.setBackground(ContextCompat.getDrawable(holder.itemView.context, R.drawable.bg_time_frame_now))
             }
+
+
         }
 
-
+        holder.itemView.setOnClickListener {
+            Toast.makeText(holder.itemView.context, timeFrameList[position], Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount(): Int = timeFrameList.size
