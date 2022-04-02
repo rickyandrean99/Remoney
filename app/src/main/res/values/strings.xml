@@ -19,5 +19,16 @@
     <string name="food">Food</string>
     <string name="date_time"><![CDATA[Date & Time]]></string>
     <string name="name">Name</string>
-    <string name="name_requirements">max. 12 words</string>
+    <string name="name_requirements">max 20 characters</string>
+    <string name="nominal">Nominal</string>
+    <string name="nominal_requirements">the amount of expenses</string>
+    <string name="name_placeholder">Enter name</string>
+    <string name="nominal_placeholder">Enter nominal</string>
+    <string name="additional">Additional Info</string>
+    <string name="additional_requirements">max 200 characters</string>
+    <string name="additional_placeholder">Enter additional info</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="remoney">Remoney</string>
+    <string name="description">All about \'Hutang Piutang\'</string>
 </resources>

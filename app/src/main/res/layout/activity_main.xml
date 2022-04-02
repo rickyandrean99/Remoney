@@ -23,6 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/content"
+                android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="@+id/constraintHeader"
                 app:layout_constraintEnd_toEndOf="@+id/constraintHeader"
                 app:layout_constraintStart_toStartOf="@+id/constraintHeader"
