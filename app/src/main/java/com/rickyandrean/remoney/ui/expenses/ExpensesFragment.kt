@@ -12,6 +12,7 @@ import com.rickyandrean.remoney.adapter.ExpensesAdapter
 import com.rickyandrean.remoney.adapter.TimeFrameAdapter
 import com.rickyandrean.remoney.api.Expenses
 import com.rickyandrean.remoney.databinding.FragmentExpensesBinding
+import com.rickyandrean.remoney.ui.newexpenses.NewExpensesFragment
 
 class ExpensesFragment : Fragment(), View.OnClickListener {
     private var _binding: FragmentExpensesBinding? = null
@@ -62,7 +63,9 @@ class ExpensesFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.fabAddExpenses -> Toast.makeText(requireActivity(), "Ini Add Expenses", Toast.LENGTH_SHORT).show()
+            R.id.fabAddExpenses -> {
+                NewExpensesFragment().show(childFragmentManager, NewExpensesFragment::class.java.simpleName)
+            }
             R.id.cvDate -> Toast.makeText(requireActivity(), "Ini Date Picker", Toast.LENGTH_SHORT).show()
             R.id.cvTimeframe -> Toast.makeText(requireActivity(), "Ini Timeframe Selectbox", Toast.LENGTH_SHORT).show()
             R.id.cvCategory -> Toast.makeText(requireActivity(), "Ini Category Selectbox", Toast.LENGTH_SHORT).show()
