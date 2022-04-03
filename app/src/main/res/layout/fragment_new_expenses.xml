@@ -108,7 +108,8 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="TextContrastCheck" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -164,22 +165,34 @@
                     app:layout_constraintTop_toBottomOf="@+id/tvDateTime">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintDateTime"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+                        <ImageButton
+                            android:id="@+id/btnDateTimePicker"
+                            style="@style/Base.Widget.AppCompat.ImageButton"
+                            android:layout_width="50dp"
+                            android:layout_height="0dp"
+                            android:backgroundTint="#EAE9EA"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/ic_calendar_gray"
+                            app:layout_constraintBottom_toBottomOf="@+id/constraintDateTime"
+                            app:layout_constraintStart_toStartOf="@+id/constraintDateTime"
+                            app:layout_constraintTop_toTopOf="@+id/constraintDateTime"
+                            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,TouchTargetSizeCheck" />
+
                         <TextView
                             android:id="@+id/tvDateTimeValue"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="12dp"
-                            android:layout_marginEnd="12dp"
+                            android:layout_marginEnd="8dp"
                             android:fontFamily="@font/inter"
-                            android:text="[icon] 16 March 2022 19:20"
                             android:textSize="13sp"
                             android:textStyle="bold"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/btnDateTimePicker"
                             app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
@@ -207,7 +220,8 @@
                     android:textColor="#B4B4B4"
                     android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="@+id/constraintContent"
-                    app:layout_constraintTop_toBottomOf="@+id/cvDateTime" />
+                    app:layout_constraintTop_toBottomOf="@+id/cvDateTime"
+                    tools:ignore="TextContrastCheck" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/textInputName"
@@ -236,7 +250,7 @@
                         android:maxLength="20"
                         android:padding="12dp"
                         android:textSize="14sp"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
@@ -262,7 +276,8 @@
                     android:textColor="#B4B4B4"
                     android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="@+id/constraintContent"
-                    app:layout_constraintTop_toBottomOf="@+id/textInputName" />
+                    app:layout_constraintTop_toBottomOf="@+id/textInputName"
+                    tools:ignore="TextContrastCheck" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/textInputNominal"
@@ -291,7 +306,7 @@
                         android:inputType="number"
                         android:padding="12dp"
                         android:textSize="14sp"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
@@ -317,7 +332,8 @@
                     android:textColor="#B4B4B4"
                     android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="@+id/constraintContent"
-                    app:layout_constraintTop_toBottomOf="@+id/textInputNominal" />
+                    app:layout_constraintTop_toBottomOf="@+id/textInputNominal"
+                    tools:ignore="TextContrastCheck" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/textInputAdditional"
